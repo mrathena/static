@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+	<title>Title</title>
+	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="src/common.css" rel="stylesheet">
+	<script src="lib/angular/angular.min.js"></script>
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="src/common.js"></script>
+</head>
+<body>
+<div class="container margin-top-30">
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Basic Form Demo</h3>
+		</div>
+		<div class="panel-body">
+			<form>
+				<div class="form-group has-success">
+					<label for="basic1" class="control-label">Username</label>
+					<input type="text" class="form-control" id="basic1" placeholder="Username">
+					<span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+				</div>
+				<div class="form-group has-warning">
+					<label for="basic2" class="control-label">Content</label>
+					<textarea class="form-control" id="basic2" rows="2" placeholder="Content"></textarea>
+				</div>
+				<div class="form-group has-error">
+					<label for="basic3" class="control-label">Age</label>
+					<select class="form-control" id="basic3">
+						<option></option>
+						<option value="0-30">青年</option>
+						<option value="31-50">中年</option>
+						<option value="51-100">老年</option>
+					</select>
+				</div>
+				<div class="form-group has-success">
+					<label class="control-label">Sex</label>
+					<div>
+						<label class="radio-inline">
+							<input type="radio" name="sex" checked>Male
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="sex" >Female
+						</label>
+					</div>
+				</div>
+				<div class="form-group has-error">
+					<label class="control-label">Hobby</label>
+					<div>
+						<label class="checkbox-inline">
+							<input type="checkbox" checked>Football
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" >Music
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" >Photography
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" >Tennis
+						</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="basic4" class="control-label">File</label>
+					<input type="file" id="basic4">
+					<p class="help-block">Example block-level help text here.</p>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox">
+						Option one is this and that&mdash;be sure to include why it's great
+					</label>
+				</div>
+				<div class="checkbox disabled">
+					<label>
+						<input type="checkbox" disabled>
+						Option two is disabled
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+						Option one is this and that&mdash;be sure to include why it's great
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+						Option two can be something else and selecting it will deselect option one
+					</label>
+				</div>
+				<div class="radio disabled">
+					<label>
+						<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+						Option three is disabled
+					</label>
+				</div>
+				<button type="button" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Inline Form Demo</h3>
+		</div>
+		<div class="panel-body">
+			<form class="form-inline">
+				<div class="form-group has-error">
+					<label for="exampleInputName2" class="control-label">Name</label>
+					<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail2">Email</label>
+					<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+				</div>
+				<button type="button" class="btn btn-default">Send invitation</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Horizontal Form Demo</h3>
+		</div>
+		<div class="panel-body">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label for="horizontal1" class="col-sm-2 control-label">Username</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="horizontal1" placeholder="Username">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Sex</label>
+					<div class="col-sm-10">
+						<label class="radio-inline">
+							<input type="radio" name="sex" checked>Male
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="sex" >Female
+						</label>
+					</div>
+				</div>
+				<div class="form-group has-success">
+					<label class="col-sm-2 control-label">Hobby</label>
+					<div class="col-sm-10">
+						<label class="checkbox-inline">
+							<input type="checkbox" checked>Football
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" >Music
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" >Photography
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" >Tennis
+						</label>
+					</div>
+				</div>
+				<div class="form-group margin-bottom-0">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="button" class="btn btn-default">Submit</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>
