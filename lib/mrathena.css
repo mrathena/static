@@ -1497,7 +1497,12 @@
 /*font-weight*/
 .text-bold {font-weight: bold !important;}
 
-.block {display: block;}
+.color-transparent {color: transparent !important;}
+.color-white {color: #FFFFFF !important;}
+.color-black {color: #000000 !important;}
+.bgcolor-transparent {background-color: transparent !important;}
+.bgcolor-white {background-color: #FFFFFF !important;}
+.bgcolor-black {background-color: #000000 !important;}
 
 .pointer {cursor: pointer;}
 
