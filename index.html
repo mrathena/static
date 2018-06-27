@@ -6,8 +6,8 @@
 	<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
 	<title>Title</title>
 	<link href="/src/favicon.ico" rel="shortcut icon" type="image/x-icon">
-	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="src/custom.css" rel="stylesheet">
+	<link href="lib/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="lib/custom.css" rel="stylesheet">
 </head>
 <body>
 
@@ -59,15 +59,25 @@
 		<div class="form-group">
 			<button type="button" class="btn btn-success" id="btn">OK</button>
 		</div>
+		
+		
+		<select class="form-control" name="add.activityPosition" id="activityPosition" data-bv-checkUnsafeLetters="true" >
+        </select>
+		
+		
 	</form>
 </div>
-<script src="lib/angular/angular.min.js"></script>
-<script src="lib/jquery/jquery.min.js"></script>
-<script src="lib/jquery/jquery.serialize-object.min.js"></script>
-<script src="lib/bootstrap/js/bootstrap.min.js"></script>
-<script src="src/custom.js"></script>
+<script src="lib/angular/1.6.4/angular.min.js"></script>
+<script src="lib/jquery/3.2.1/jquery-3.2.1.min.js"></script>
+<script src="lib/jquery/jquery.serialize/2.5.0/jquery.serialize-object.min.js"></script>
+<script src="lib/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="lib/custom.js"></script>
 <script>
 $(document).ready(function() {
+	
+	$("#activityPosition")
+		.append("<option value='1'>位置1</option>")
+		.append("<option value='2'>位置2</option>");
 
 	$(document).on("click", "#test1", function() {
 		$.toUrlWithParseObjectToUrlParam(location.href, object);
